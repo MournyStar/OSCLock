@@ -250,7 +250,7 @@ namespace OSCLock.Bluetooth
 				//Console.WriteLine("Error while reading from device " + e, e);
 				Console.WriteLine(e);
 				Console.WriteLine("\n\nThere was an error which is usually expected but the lock should've opened. \nPlease let the creators know if it didn't!");
-				Console.WriteLine("\n\n\/ Array size numbers to help with debugging Array.Copy() \/);
+				Console.WriteLine("\n\n\\/ Array size numbers to help with debugging Array.Copy() \\/);
 				Console.WriteLine(data.Length);
 				Console.WriteLine(CurrentPacket_TOTALSIZE);
 				Console.WriteLine(CurrentPacket_DATA.Length);
