@@ -213,21 +213,9 @@ namespace OSCLock.Bluetooth
 						Console.WriteLine("Read bytes into data");
 						Console.WriteLine(data.Length);
 						Console.WriteLine(CurrentPacket_TOTALSIZE);
-						Console.WriteLine(CurrentPacket_DATA.Length);
+						Console.WriteLine(DATA_LENGTH)
 						Console.WriteLine("AAAA");
-						try
-						{
-							Array.Copy(data, 2, CurrentPacket_DATA, DATA_LENGTH, data.Length - 2);
-						}
-						catch (ArgumentException e)
-                        {
-                            Console.WriteLine(e);
-                            Console.WriteLine("\n\n\\/ Array data to help with debugging Array.Copy() \\/");
-                            Console.WriteLine(data.Length);
-                            Console.WriteLine(CurrentPacket_TOTALSIZE);
-                            Console.WriteLine(CurrentPacket_DATA.Length);
-							throw new Exception("Array mismatch!");
-                        }
+						Array.Copy(data, 2, CurrentPacket_DATA, 0, data.Length - 2);
 						DATA_LENGTH = data.Length - 2;
 					}
 					else
