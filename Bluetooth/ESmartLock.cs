@@ -253,7 +253,7 @@ namespace OSCLock.Bluetooth
 				CurrentPacket_TOTALSIZE = 0;
 				CurrentPacket_DATA = null;
 				DATA_LENGTH = 0;
-                Console.ReadKey();
+			    while (!Console.KeyAvailable) {}
 			}
 		}
 
