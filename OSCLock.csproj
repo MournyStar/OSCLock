@@ -121,7 +121,9 @@
     <Content Include="References\SharpOSC\SharpOSC.pdb" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="..\..\..\AppData\Roaming\NuGet\nuget.config">
+      <Link>nuget.config</Link>
+    </None>
     <None Include="OSCLock_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +148,7 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions">
       <Version>7.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.28000.1839" />
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.3</Version>
     </PackageReference>
