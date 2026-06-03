@@ -226,7 +226,7 @@ namespace OSCLock.Bluetooth
 							Console.WriteLine(data.Length);
 							Console.WriteLine(CurrentPacket_TOTALSIZE);
 							Console.WriteLine(CurrentPacket_DATA.Length);
-							throw new Exception("Byte Array Mismatch!")
+							throw new Exception("Byte Array Mismatch!");
 						}
 						DATA_LENGTH = data.Length - 2;
 					}
